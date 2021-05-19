@@ -3,6 +3,9 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
+
+$maxWidth: 45vw;
+
 html {
   margin: 0;
   padding: 0;
@@ -224,7 +227,7 @@ iframe {
   width: 100%;
 }
 article {
-  max-width: 500px;
+  max-width: $maxWidth;
   margin: 0 auto;
   h1.title {
     line-height: 1.4em;
@@ -307,7 +310,7 @@ article {
 .page-navigation,
 .footer {
   text-align: center;
-  max-width: 500px;
+  max-width: $maxWidth;
   margin: 0 auto;
   font-size: 0.8rem;
 }
@@ -331,7 +334,7 @@ article {
   }
 }
 section {
-  max-width: 500px;
+  max-width: $maxWidth;
   margin: 0 auto 50px auto;
   ul {
     list-style: none;
