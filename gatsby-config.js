@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `The Plain Gatsby`,
-    description: `A simple minimalist starter for your personal blog.`,
+    title: `Rafael Rahal`,
+    description: `Personal blog.`,
     author: `@wangonya`,
     avatar: `https://avatars0.githubusercontent.com/u/19375569?s=460&v=4`,
     siteUrl: `https://the-plain-gatsby.netlify.com`,
