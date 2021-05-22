@@ -81,9 +81,22 @@ blockquote {
   padding: 5px 30px;
   background: #eee;
 }
+
+.header-container {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 48px;
+}
+
+.header-box {
+  display: flex;
+  width: 20vw;
+  justify-content: space-between;
+}
+
+
 .logo {
   position: relative;
-  margin: 0 auto 35px;
   text-align: center;
   animation-duration: 0.7s;
   animation-fill-mode: both;
