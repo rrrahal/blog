@@ -6,10 +6,11 @@ import Logo from './logo';
 const Header = ({ avatar }) => (
   <header className="header-container">
     <div className="header-box">
-      <Logo avatar={avatar} />
-      <div className="title">
-        Rafael Rahal
+    <div className="title-container">
+        <div className="tittle">Rafael Rahal</div>
+        <div className="subTittle">Software Engineer</div>
       </div>
+    <Logo avatar={avatar} />
     </div>
   </header>
 

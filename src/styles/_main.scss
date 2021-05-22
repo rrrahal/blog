@@ -90,8 +90,30 @@ blockquote {
 
 .header-box {
   display: flex;
-  width: 20vw;
-  justify-content: space-between;
+  width: 45vw;
+  justify-content: space-evenly;
+}
+
+.title-box {
+  display: flex;
+  justify-content: center;
+  flex: 1;
+}
+
+.title-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.tittle {
+  font-size: 38px;
+  padding-bottom: 24px;
+}
+
+.subTittle {
+  font-size: 24px;
 }
 
 
@@ -109,8 +131,8 @@ blockquote {
     color: #000;
     text-decoration: none;
     font-weight: 700;
-    height: 100px;
-    width: 100px;
+    height: 140px;
+    width: 140px;
     font-size: 1.5em;
     border-radius: 100%;
     display: inline-block;

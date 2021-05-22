@@ -3,7 +3,7 @@ module.exports = {
     title: `Rafael Rahal`,
     description: `Personal blog.`,
     author: `@wangonya`,
-    avatar: `https://avatars0.githubusercontent.com/u/19375569?s=460&v=4`,
+    avatar: `https://i.ibb.co/hc6NVn0/95-DAF050-3-DE4-4-AC1-8-FA4-F67-C7-B5-B6073-1-105-c.jpg`,
     siteUrl: `https://the-plain-gatsby.netlify.com`,
   },
   plugins: [
