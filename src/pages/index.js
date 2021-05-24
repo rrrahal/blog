@@ -13,6 +13,7 @@ const IndexPage = ({ data }) => {
   const posts = data.allMarkdownRemark.edges.filter(
     p => p.node.frontmatter.date !== null
   )
+  console.log(posts)
   const postsList = posts =>
     posts.map(post => (
       <li key={post.node.id}>
@@ -57,6 +58,7 @@ export const pageQuery = graphql`
           frontmatter {
             date(formatString: "MMMM DD, YY")
             title
+            shortText
           }
         }
       }
