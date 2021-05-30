@@ -376,12 +376,9 @@ section {
     margin: 0;
     padding: 0;
     li {
-      margin: 25px 0;
+      padding: 24px 0;
       .title {
         max-width: 100%;
-        //overflow: hidden !important;
-        //text-overflow: ellipsis !important;
-        //white-space: nowrap !important;
         word-wrap: normal !important;
       }
       a {
@@ -409,6 +406,9 @@ section {
       }
     }
   }
+}
+.index-title {
+  font-size: 20px;
 }
 @keyframes bounce {0% {
     transform: translate3d( 0, -1000px, 0 );
