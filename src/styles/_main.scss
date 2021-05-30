@@ -397,6 +397,9 @@ section {
         letter-spacing: 1px;
         text-transform: uppercase;
       }
+      .shortText {
+        padding: 16px 8px;
+      }
       @media (min-width: 992px) {a {
           border-bottom: 2px solid transparent;
           &:hover {
