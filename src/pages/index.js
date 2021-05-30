@@ -16,20 +16,24 @@ const IndexPage = ({ data }) => {
   console.log(posts)
   const postsList = posts =>
     posts.map(post => (
-      <li key={post.node.id}>
-        <div className="post-date code">
-          <small>{post.node.frontmatter.date}</small>
-        </div>
-        <div className="title">
-          <Link to={post.node.fields.slug}>{post.node.frontmatter.title}</Link>
-        </div>
-      </li>
+      <div className="posts-container">
+        <li key={post.node.id}>
+          <div className="post-date code">
+            <small>{post.node.frontmatter.date}</small>
+          </div>
+          <div className="title index-title">
+            <Link to={post.node.fields.slug}>{post.node.frontmatter.title}</Link>
+          </div>
+          <div className="shortText">
+            {post.node.frontmatter.shortText}
+          </div>
+        </li>
+      </div>
     ))
 
   const postsListContainer = groupBy(posts, getDateYear)
     .map(({ year, posts }, i) => (
       <div key={i}>
-        <h4 className="code">{year}</h4>
         {postsList(posts)}
       </div>
     ))
