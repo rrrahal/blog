@@ -68,7 +68,9 @@ function SEO({ description, lang, meta, title }) {
           content: metaDescription,
         },
       ].concat(meta)}
-    />
+    >
+      <script async src="https://cdn.splitbee.io/sb.js"></script>
+      </Helmet>
   )
 }
 
