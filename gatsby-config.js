@@ -2,9 +2,9 @@ module.exports = {
   siteMetadata: {
     title: `Rafael Rahal`,
     description: `Personal blog.`,
-    author: `@wangonya`,
+    author: `@rrrahal`,
     avatar: `https://i.ibb.co/hc6NVn0/95-DAF050-3-DE4-4-AC1-8-FA4-F67-C7-B5-B6073-1-105-c.jpg`,
-    siteUrl: `https://the-plain-gatsby.netlify.com`,
+    siteUrl: `https://blog.rafaelrahal.tech`,
   },
   plugins: [
     {
@@ -58,7 +58,7 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/male-tech.png`, // This path is relative to the root of the site.
       },
     }
     // this (optional) plugin enables Progressive Web App + Offline functionality
