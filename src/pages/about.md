@@ -1,8 +1,11 @@
 ---
 title: About
 ---
-Hello.
+Hello, I'm **Rafael**
 
-This will be your About page. Anything about you, it should be written here in details. You may describe your bio here like who you are, what you do, your intention, social site hyperlinks and how people can contact you, etc.
+I currently work for [Talkdesk](talkdesk.com), trying to change the way customers and company communicate.
 
-**Less is more..**
+I use this place to write about things I learn.
+
+Feel free to find me at [Github](https://www.github.com/rrrahal) or [Linkedin](https://www.linkedin.com/in/rafaelrahal/).
+
