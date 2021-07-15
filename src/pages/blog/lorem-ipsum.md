@@ -1,6 +1,6 @@
 ---
 title: Lorem Ipsum
-date: 2015-09-06
+#date: 2015-09-06
 shortText: Hello World!
 ---
 
