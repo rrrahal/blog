@@ -3,7 +3,7 @@ title: About
 ---
 Hello, I'm **Rafael**
 
-I currently work for [Talkdesk](talkdesk.com), trying to change the way customers and company communicate.
+I currently work for [Talkdesk](talkdesk.com), providing great customer experience in the cloud.
 
 I use this place to write about things I learn.
 
