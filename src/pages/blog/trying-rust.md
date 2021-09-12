@@ -14,7 +14,7 @@ With that in mind I stumbled upon a very nice rust website called [Rust Adventur
 The course has been split into 5 parts, each part has a small quizz at the end of the section that makes you think a little bit further about what you've done. The structure overall is really good and it does not take more than 1 hour to complete.
 
 
-## The small project and some concepts
+## The small project and some basic concepts
 
 The goal of the course is for you to build a very simple CLI tool that tells you the weather.
 To do that we start with tooling installation, which is fairly simple and we are up and running in no time. In this first part he also introduces you to cargo, which is Rust's package manager.
