@@ -4,7 +4,7 @@ date: 2021-09-12
 shortText: A nice way of writing systems programs?
 ---
 
-If you are following the trends on the web nowadays you've probably encounter [rust-lang](https://www.rust-lang.org/) somewhere. As an outsider I thought of it as something people are using for [Systems Programming](https://en.wikipedia.org/wiki/Systems_programming) or related fields and these people seem to love it. 
+If you are following the trends on the web nowadays you've probably encounter [rust-lang](https://www.rust-lang.org/) somewhere. As an outsider I thought of it as something people are using for [Systems Programming](https://en.wikipedia.org/wiki/Systems_programming) or related fields and these people seem to love it.
 
 With that in mind I stumbled upon a very nice rust website called [Rust Adventure](https://www.rustadventure.dev) and it explained a few concepts of the language and also had a free e-mail course. So, why not give it a chance?
 
@@ -32,6 +32,6 @@ At last we are taught how make HTTP requests and that shows us a little bit abou
 
 ## Conclusion
 
-After this brief introduction It seems like Rust had some really cool language decisions and also was build upon cool features. The next step is to read some of the [Rust Book](https://doc.rust-lang.org/book/) (which is the best resource to learn Rust), the chapters on Common Programming Concepts and Ownership seem very interesting. After that maybe I should try and build something with it, if it's something interesting I'll write about it here. 
+After this brief introduction It seems like Rust had some really cool language decisions and also was build upon cool features. The next step is to read some of the [Rust Book](https://doc.rust-lang.org/book/) (which is the best resource to learn Rust), the chapters on Common Programming Concepts and Ownership seem very interesting. After that maybe I should try and build something with it, if it's something interesting I'll write about it here.
 
-Thank you for reading, and go try [this crash course for yourself](this crash course for yourself). (:
+Thank you for reading, and go try [this crash course for yourself](https://www.rustadventure.dev). (:
