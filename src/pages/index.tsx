@@ -5,19 +5,19 @@ const Box = styled('div', {})
 
 const Text = styled('p', {
   fontFamily: '$system',
-  color: '$hiContrast',
+  color: '$gray9',
 })
 
 const Link = styled('a', {
   fontFamily: '$system',
   textDecoration: 'none',
-  color: '$purple600',
+  color: '$blue9',
 })
 
 const Container = styled('div', {
   marginX: 'auto',
   paddingX: '$3',
-
+  color: "$sand9",
   variants: {
     size: {
       1: {
