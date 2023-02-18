@@ -23,23 +23,26 @@ export const {
       ...blue,
       ...grayDark,
       ...blueDark,
-      ...sand
+      ...sand,
+      primary: sand.sand3,
+      secondary: gray.gray11,
+      hiContrast: blueDark.blue7
     },
     space: {
-      1: '5px',
-      2: '10px',
-      3: '15px',
-      4: '20px',
-      5: '25px',
-      6: '35px',
+      1: '4px',
+      2: '8px',
+      3: '12px',
+      4: '16px',
+      5: '20px',
+      6: '24px',
     },
     sizes: {
-      1: '5px',
-      2: '10px',
-      3: '15px',
-      4: '20px',
-      5: '25px',
-      6: '35px',
+      1: '4px',
+      2: '8px',
+      3: '12px',
+      4: '16px',
+      5: '20px',
+      6: '24px',
     },
     fontSizes: {
       1: '12px',
@@ -75,4 +78,12 @@ export const {
     bp1: '(min-width: 520px)',
     bp2: '(min-width: 900px)',
   },
+})
+
+
+export const darkTheme = createTheme({
+  theme: {
+    primary: blueDark.blue3,
+    secondary: gray.gray1
+  }
 })

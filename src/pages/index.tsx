@@ -1,23 +1,27 @@
 import Head from 'next/head'
+import * as Tabs from '@radix-ui/react-tabs';
+
 import { styled } from '../../stitches.config'
+
+import { Header } from '../components/Header'
 
 const Box = styled('div', {})
 
 const Text = styled('p', {
   fontFamily: '$system',
-  color: '$gray9',
+  color: '$secondary',
 })
 
 const Link = styled('a', {
   fontFamily: '$system',
   textDecoration: 'none',
-  color: '$blue9',
+  color: '$hiContrast',
 })
 
-const Container = styled('div', {
+const Content = styled('div', {
   marginX: 'auto',
   paddingX: '$3',
-  color: "$sand9",
+  color: "$primary",
   variants: {
     size: {
       1: {
@@ -39,14 +43,10 @@ export default function Home() {
       <Head>
         <title>Use Stitches with Next.js</title>
       </Head>
-      <Container size={{ '@initial': '1', '@bp1': '2' }}>
-        <Text as="h1">Hello, from Stitches.</Text>
-        <Text>
-          For full documentation, visit{' '}
-          <Link href="https://stitches.dev">stitches.dev</Link>.
-        </Text>
-        Please visit this link <Link href="/posts/my-mdx-page">here</Link>
-      </Container>
+      <Header/>
+      <Content size={{ '@initial': '1', '@bp1': '2' }}>
+
+      </Content>
     </Box>
   )
 }
