@@ -2,7 +2,7 @@ import type * as Stitches from '@stitches/react'
 import { createStitches } from '@stitches/react'
 import {
   gray,
-  sand,
+  slate,
   blue,
   grayDark,
   blueDark,
@@ -23,8 +23,8 @@ export const {
       ...blue,
       ...grayDark,
       ...blueDark,
-      ...sand,
-      primary: sand.sand3,
+      ...slate,
+      primary: slate.slate3,
       secondary: gray.gray11,
       hiContrast: blueDark.blue7
     },
@@ -87,3 +87,13 @@ export const darkTheme = createTheme({
     secondary: gray.gray1
   }
 })
+
+const GlobalStyles = globalCss({
+  body: {
+    //we can call the color token values with the
+    //$ prefix in a string
+    background: "$primary",
+  }
+})
+
+GlobalStyles();

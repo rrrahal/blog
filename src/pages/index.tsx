@@ -39,13 +39,28 @@ const Content = styled('div', {
 
 export default function Home() {
   return (
-    <Box css={{ paddingY: '$6' }}>
+    <Box css={{ paddingY: '$2', height: '100vh'}}>
       <Head>
         <title>Use Stitches with Next.js</title>
       </Head>
       <Header/>
-      <Content size={{ '@initial': '1', '@bp1': '2' }}>
-
+      <Content size={{ '@initial': '1', '@bp1': '2' }} css={{paddingY: '$2'}}>
+      <Tabs.Root defaultValue="posts">
+        <Tabs.List aria-label="Posts">
+          <Tabs.Trigger value="posts">
+            Posts
+          </Tabs.Trigger>
+          <Tabs.Trigger value="about">
+            About
+          </Tabs.Trigger>
+        </Tabs.List>
+        <Tabs.Content value='posts' >
+          <Text>Here are the posts</Text>
+        </Tabs.Content>
+        <Tabs.Content value='about' >
+          <Text>Here is the about</Text>
+        </Tabs.Content>
+      </Tabs.Root>
       </Content>
     </Box>
   )
