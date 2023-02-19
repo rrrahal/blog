@@ -43,6 +43,8 @@ export const {
       4: '16px',
       5: '20px',
       6: '24px',
+      bigContentSize: '400px',
+      smallContentSize: '350px'
     },
     fontSizes: {
       1: '12px',
@@ -51,6 +53,9 @@ export const {
       4: '17px',
       5: '19px',
       6: '21px',
+      7: '24px',
+      8: '28px',
+      titleSize: '32px'
     },
     fonts: {
       system: 'system-ui',
@@ -90,9 +95,16 @@ export const darkTheme = createTheme({
 
 const GlobalStyles = globalCss({
   body: {
-    //we can call the color token values with the
-    //$ prefix in a string
     background: "$primary",
+  },
+  button: {
+    all: 'unset'
+  },
+  fieldset: {
+    all: 'unset'
+  },
+  input: {
+    all: 'unset'
   }
 })
 

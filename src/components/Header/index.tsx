@@ -4,33 +4,36 @@ import { TwitterLogoIcon, LinkedInLogoIcon } from '@radix-ui/react-icons'
 import * as Separator from '@radix-ui/react-separator';
 
 import { styled } from '../../../stitches.config'
+import { Title } from './title'
+import { SocialMedia } from './social_media';
 
 const Box = styled('div', {
   display: 'flex',
+  flexDirection: 'column',
   width: '100%',
-  justifyItems: 'center'
+  justifyContent: 'center',
+  alignItems: 'center'
 })
 
-const Title = styled('h1', {
-  marginLeft: '$2',
-  fontSize: '$6',
-  width: '100%'
-})
-
-const SocialMediaItem = styled('a', {
-  fontSize: '$4',
+const Container = styled('div', {
+  display: 'flex',
+  justifyContent: 'center',
+  width: '600px'
 })
 
 const StyledSeparator = styled(Separator.Root, {
   height: '1px',
   width: '100%',
-  backgroundColor: '$hiContrast'
+  backgroundColor: '$hiContrast',
+  maxWidth: '700px'
 })
 
 const StyledImage = styled(Image, {
   borderRadius: '100%',
   paddingY: '$2',
-  marginLeft: '$4'
+  marginLeft: '$4',
+  width: 120,
+  height: 120,
 })
 
 
@@ -39,24 +42,13 @@ export const Header = () => {
   return (
     <>
     <Box>
-      <StyledImage src='/raful.jpg' alt='A picture of Rafael Rahal' width={120} height={120} />
-      <Title>Rafael Rahal</Title>
-      <Box css={{
-        alignItems: 'center',
-        justifyContent: 'space-around'
-      }
-      }>
-        <SocialMediaItem> <TwitterLogoIcon style={{
-          width: 25,
-          height: 25
-        }}/> </SocialMediaItem>
-        <SocialMediaItem> <LinkedInLogoIcon style={{
-          width: 25,
-          height: 25
-        }}/> </SocialMediaItem>
-      </Box>
+      <Container>
+        <StyledImage src='/raful.jpg' alt='A picture of Rafael Rahal' width={120} height={120} />
+        <Title />
+        <SocialMedia />
+      </Container>
+      <StyledSeparator />
     </Box>
-    <StyledSeparator />
     </>
   )
 }
