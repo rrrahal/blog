@@ -1,8 +1,13 @@
 import React from 'react'
 
+import { postsType } from '@/types'
 import { styled } from '../../../stitches.config'
-
 import { ContentTabs } from './tabs'
+
+type ContentProps = {
+  posts: postsType 
+}
+
 
 const Container = styled('div', {
   marginX: 'auto',
@@ -16,8 +21,8 @@ const Container = styled('div', {
 })
 
 
-export const Content = () => (
+export const Content = ({ posts }: ContentProps) => (
   <Container>
-    <ContentTabs />
+    <ContentTabs posts={posts} />
   </Container>
 )

@@ -1,7 +1,12 @@
-
 import * as Tabs from '@radix-ui/react-tabs';
 
+import { postsType } from '@/types';
 import { styled } from '../../../stitches.config'
+import { PostsList } from './postsList';
+
+type ContentTabsProps = {
+  posts: postsType
+}
 
 const Text = styled('p', {
   fontFamily: '$system',
@@ -46,11 +51,12 @@ const Content = styled(Tabs.Content, {
   maxWidth: '$bigContentSize',
   '@bp1': {
     maxWidth: '$smallContentSize'
-  }
+  },
+  color: '$secondary'
 })
 
 
-export const ContentTabs = () => (
+export const ContentTabs = ({ posts }: ContentTabsProps) => (
   <Root defaultValue="posts">
   <List aria-label="Posts">
     <Trigger value="posts">
@@ -61,7 +67,7 @@ export const ContentTabs = () => (
     </Trigger>
   </List>
   <Content value='posts' >
-    <Text>Here are the posts</Text>
+    <PostsList posts={posts} />
   </Content>
   <Content value='about' >
     <Text>Here is the about</Text>
