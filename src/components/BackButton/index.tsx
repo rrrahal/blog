@@ -10,7 +10,7 @@ import { styled } from 'stitches.config'
 const ButtonContainer = styled('div', {
   width: '120px',
   height: '30px',
-  borderBottom: '1px solid $hiContrast',
+  borderBottom: '1px solid $borders',
   display: 'flex',
   alignItems: 'center',
   justifyContent: 'center'

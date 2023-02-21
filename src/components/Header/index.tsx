@@ -26,7 +26,7 @@ const Container = styled('div', {
 const StyledSeparator = styled(Separator.Root, {
   height: '1px',
   width: '100%',
-  backgroundColor: '$hiContrast',
+  backgroundColor: '$borders',
   maxWidth: '700px'
 })
 

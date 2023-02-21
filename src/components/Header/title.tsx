@@ -9,6 +9,7 @@ const Box = styled('div', {
 })
 
 const Text = styled('h1', {
+  color: "$hiContrast",
   fontSize: '$7',
   marginX: 'auto',
   '@bp1': {

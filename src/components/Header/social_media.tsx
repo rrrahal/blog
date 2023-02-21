@@ -18,7 +18,7 @@ const TwitterStyledIcon = styled(TwitterLogoIcon, {
   height: 25,
   color: "$twitterBlue",
   "&:hover": {
-    color: "$hiContrast"
+    color: "$hover"
   }
 })
 
@@ -27,7 +27,7 @@ const LinkedinStyledIcon = styled(LinkedInLogoIcon, {
   height: 25,
   color: "$linkedinBlue",
   "&:hover": {
-    color: "$hiContrast"
+    color: "$hover"
   }
 })
 

@@ -35,18 +35,18 @@ const List = styled(Tabs.List, {
 })
 
 const Trigger = styled(Tabs.Trigger, {
-  backgroundColor: '$primary',
   color: '$hiContrast',
   height: '30px',
   display: 'flex',
   alignItems: 'Center',
   fontSize: '$5',
+  paddingX: "$3",
 
   '&:hover': {
-    backgroundColor: '$secondary'
+    borderBottom: '1px solid $hover',
   },
   '&[data-state=active]': {
-    borderBottom: '1px solid $hiContrast',
+    borderBottom: '1px solid $active',
   },
 })
 

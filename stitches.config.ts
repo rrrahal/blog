@@ -2,9 +2,8 @@ import type * as Stitches from '@stitches/react'
 import { createStitches } from '@stitches/react'
 import {
   gray,
-  slate,
-  blue,
-  grayDark,
+  mint,
+  amber,
   blueDark,
 } from '@radix-ui/colors';
 
@@ -19,14 +18,13 @@ export const {
 } = createStitches({
   theme: {
     colors: {
-      ...gray,
-      ...blue,
-      ...grayDark,
-      ...blueDark,
-      ...slate,
-      primary: slate.slate3,
+      primary: amber.amber2,
       secondary: gray.gray11,
-      hiContrast: blueDark.blue7,
+      hiContrast: amber.amber12,
+      loContrast: amber.amber11,
+      borders: amber.amber6,
+      hover: amber.amber4,
+      active: amber.amber5,
       twitterBlue: '#1DA1F2',
       linkedinBlue: '#0077B5'
     },
@@ -98,7 +96,7 @@ export const darkTheme = createTheme({
 
 const GlobalStyles = globalCss({
   body: {
-    background: "$primary",
+    backgroundColor: "$primary",
   },
   button: {
     all: 'unset'
