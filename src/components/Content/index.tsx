@@ -5,7 +5,7 @@ import { styled } from '../../../stitches.config'
 import { ContentTabs } from './tabs'
 
 type ContentProps = {
-  posts: postsType 
+  posts: postsType
 }
 
 
