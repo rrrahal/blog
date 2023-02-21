@@ -44,7 +44,8 @@ export const {
       5: '20px',
       6: '24px',
       bigContentSize: '400px',
-      smallContentSize: '350px'
+      smallContentSize: '350px',
+      bigPostSize: '700px'
     },
     fontSizes: {
       1: '12px',
@@ -105,6 +106,9 @@ const GlobalStyles = globalCss({
   },
   input: {
     all: 'unset'
+  },
+  a: {
+    textDecoration: 'none'
   }
 })
 

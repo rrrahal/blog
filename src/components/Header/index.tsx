@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
-import { TwitterLogoIcon, LinkedInLogoIcon } from '@radix-ui/react-icons'
+import Link from 'next/link'
 import * as Separator from '@radix-ui/react-separator';
 
 import { styled } from '../../../stitches.config'
@@ -43,7 +43,9 @@ export const Header = () => {
     <>
     <Box>
       <Container>
-        <StyledImage src='/raful.jpg' alt='A picture of Rafael Rahal' width={120} height={120} />
+        <Link href="/">
+          <StyledImage src='/raful.jpg' alt='A picture of Rafael Rahal' width={120} height={120} />
+        </Link>
         <Title />
         <SocialMedia />
       </Container>

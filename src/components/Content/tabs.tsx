@@ -36,7 +36,7 @@ const Trigger = styled(Tabs.Trigger, {
   height: '30px',
   display: 'flex',
   alignItems: 'Center',
-  fontSize: '$6',
+  fontSize: '$5',
 
   '&:hover': {
     backgroundColor: '$secondary'
