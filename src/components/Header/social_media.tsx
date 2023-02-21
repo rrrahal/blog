@@ -13,16 +13,28 @@ const SocialMediaItem = styled('a', {
   paddingX: '$2',
 })
 
+const TwitterStyledIcon = styled(TwitterLogoIcon, {
+  width: 25,
+  height: 25,
+  color: "$twitterBlue",
+  "&:hover": {
+    color: "$hiContrast"
+  }
+})
+
+const LinkedinStyledIcon = styled(LinkedInLogoIcon, {
+  width: 25,
+  height: 25,
+  color: "$linkedinBlue",
+  "&:hover": {
+    color: "$hiContrast"
+  }
+})
+
 
 export const SocialMedia = () => (
   <Box>
-    <SocialMediaItem> <TwitterLogoIcon style={{
-          width: 25,
-          height: 25
-        }}/> </SocialMediaItem>
-        <SocialMediaItem> <LinkedInLogoIcon style={{
-          width: 25,
-          height: 25
-        }}/> </SocialMediaItem>
+    <SocialMediaItem> <TwitterStyledIcon/> </SocialMediaItem>
+        <SocialMediaItem> <LinkedinStyledIcon /> </SocialMediaItem>
   </Box>
 )

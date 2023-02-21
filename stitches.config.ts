@@ -26,7 +26,9 @@ export const {
       ...slate,
       primary: slate.slate3,
       secondary: gray.gray11,
-      hiContrast: blueDark.blue7
+      hiContrast: blueDark.blue7,
+      twitterBlue: '#1DA1F2',
+      linkedinBlue: '#0077B5'
     },
     space: {
       1: '4px',
