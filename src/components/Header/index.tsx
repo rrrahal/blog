@@ -7,6 +7,8 @@ import { styled } from '../../../stitches.config'
 import { Title } from './title'
 import { SocialMedia } from './social_media';
 
+// TODO: REMOVE THIS PX FROM THIS FILE
+
 const Box = styled('div', {
   display: 'flex',
   flexDirection: 'column',

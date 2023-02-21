@@ -109,6 +109,10 @@ const GlobalStyles = globalCss({
   },
   a: {
     textDecoration: 'none'
+  },
+  ul: {
+    padding: 0,
+    margin: 0
   }
 })
 

@@ -5,6 +5,7 @@ import Link from 'next/link'
 import { ArrowLeftIcon } from '@radix-ui/react-icons'
 
 import { styled } from 'stitches.config'
+// TODO REMOVE THIS PX FROM THIS FILE
 
 const ButtonContainer = styled('div', {
   width: '120px',

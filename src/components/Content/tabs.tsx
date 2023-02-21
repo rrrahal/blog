@@ -8,7 +8,11 @@ type ContentTabsProps = {
   posts: postsType
 }
 
+// TODO REMOVE THIS PX FROM THIS FILE
+
 const Text = styled('p', {
+  margin: 0,
+  paddingTop: '$5',
   fontFamily: '$system',
   color: '$secondary',
 })
@@ -42,17 +46,14 @@ const Trigger = styled(Tabs.Trigger, {
     backgroundColor: '$secondary'
   },
   '&[data-state=active]': {
-    borderBottom: '1px solid red',
+    borderBottom: '1px solid $hiContrast',
   },
 })
 
 const Content = styled(Tabs.Content, {
-  alignSelf: 'flex-start',
-  maxWidth: '$bigContentSize',
-  '@bp1': {
-    maxWidth: '$smallContentSize'
-  },
-  color: '$secondary'
+  // TODO: REMOVE THIS SIZES
+  width: '650px',
+  color: '$hiContrast',
 })
 
 
