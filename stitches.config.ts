@@ -18,7 +18,7 @@ export const {
 } = createStitches({
   theme: {
     colors: {
-      primary: amber.amber2,
+      primary: amber.amber1,
       secondary: gray.gray11,
       hiContrast: amber.amber12,
       loContrast: amber.amber11,
@@ -56,7 +56,7 @@ export const {
       6: '21px',
       7: '24px',
       8: '28px',
-      titleSize: '32px'
+      titleSize: '38px'
     },
     fonts: {
       system: 'system-ui',

@@ -12,7 +12,6 @@ type ContentProps = {
 const Container = styled('div', {
   marginX: 'auto',
   paddingX: '$3',
-  paddingTop: '$2',
   color: "$primary",
   maxWidth: '$bigContentSize',
   '@bp1': {

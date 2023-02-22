@@ -1,4 +1,5 @@
 import * as Tabs from '@radix-ui/react-tabs';
+import * as Separator from '@radix-ui/react-separator';
 
 import { postsType } from '@/types';
 import { styled } from '../../../stitches.config'
@@ -41,6 +42,7 @@ const Trigger = styled(Tabs.Trigger, {
   alignItems: 'Center',
   fontSize: '$5',
   paddingX: "$3",
+  paddingY: '$1',
 
   '&:hover': {
     borderBottom: '1px solid $hover',
@@ -56,6 +58,11 @@ const Content = styled(Tabs.Content, {
   color: '$hiContrast',
 })
 
+const VerticalSeparator = styled(Separator.Root, {
+  width: '1px',
+  backgroundColor: '$hover'
+})
+
 
 export const ContentTabs = ({ posts }: ContentTabsProps) => (
   <Root defaultValue="posts">
@@ -63,6 +70,7 @@ export const ContentTabs = ({ posts }: ContentTabsProps) => (
     <Trigger value="posts">
       Posts
     </Trigger>
+    <VerticalSeparator orientation='vertical' />
     <Trigger value="about">
       About
     </Trigger>

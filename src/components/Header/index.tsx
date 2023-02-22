@@ -34,8 +34,8 @@ const StyledImage = styled(Image, {
   borderRadius: '100%',
   paddingY: '$2',
   marginLeft: '$4',
-  width: 120,
-  height: 120,
+  width: 100,
+  height: 100,
 })
 
 
@@ -46,7 +46,7 @@ export const Header = () => {
     <Box>
       <Container>
         <Link href="/">
-          <StyledImage src='/raful.jpg' alt='A picture of Rafael Rahal' width={120} height={120} />
+          <StyledImage src='/raful.jpg' alt='A picture of Rafael Rahal' width={100} height={100} />
         </Link>
         <Title />
         <SocialMedia />

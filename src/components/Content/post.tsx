@@ -17,7 +17,8 @@ const PostLink = styled(Link, {
   display: 'flex',
   justifyContent: 'center',
   alignItems: 'center',
-  color: '$hiContrast'
+  color: '$hiContrast',
+  fontSize: '$5'
 })
 
 const DateText = styled('time', {

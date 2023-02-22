@@ -34,7 +34,11 @@ const LinkedinStyledIcon = styled(LinkedInLogoIcon, {
 
 export const SocialMedia = () => (
   <Box>
-    <SocialMediaItem> <TwitterStyledIcon/> </SocialMediaItem>
-        <SocialMediaItem> <LinkedinStyledIcon /> </SocialMediaItem>
+    <SocialMediaItem href="https://twitter.com/rafael_rahal" target="_blank" rel="noopener noreferrer">
+      <TwitterStyledIcon/>
+    </SocialMediaItem>
+    <SocialMediaItem href="https://www.linkedin.com/in/rafaelrahal/" target="_blank" rel="noopener noreferrer">
+      <LinkedinStyledIcon />
+    </SocialMediaItem>
   </Box>
 )
