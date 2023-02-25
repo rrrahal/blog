@@ -6,6 +6,7 @@ import * as Separator from '@radix-ui/react-separator';
 import { styled } from '../../../stitches.config'
 import { Title } from './title'
 import { SocialMedia } from './social_media';
+import { ThemeChanger } from './ThemeChanger';
 
 // TODO: REMOVE THIS PX FROM THIS FILE
 
@@ -38,7 +39,10 @@ const StyledImage = styled(Image, {
   height: 100,
 })
 
-
+const RightContainer = styled('div', {
+  display: 'flex',
+  flexDirection: 'column'
+})
 
 export const Header = () => {
   return (
@@ -49,7 +53,10 @@ export const Header = () => {
           <StyledImage src='/raful.jpg' alt='A picture of Rafael Rahal' width={100} height={100} />
         </Link>
         <Title />
-        <SocialMedia />
+        <RightContainer>
+          <SocialMedia />
+          <ThemeChanger />
+      </RightContainer>
       </Container>
       <StyledSeparator />
     </Box>
