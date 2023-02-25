@@ -8,8 +8,8 @@ import { styled } from 'stitches.config'
 // TODO REMOVE THIS PX FROM THIS FILE
 
 const ButtonContainer = styled('div', {
-  width: '120px',
-  height: '30px',
+  width: '100px',
+  height: '40px',
   borderBottom: '1px solid $borders',
   display: 'flex',
   alignItems: 'center',
@@ -18,13 +18,10 @@ const ButtonContainer = styled('div', {
 
 const StyledButton = styled('button', {
   color: "$hiContrast",
-  paddingY: "$1",
   display: 'flex',
   alignItems: 'center',
   justifyContent: 'space-around',
-  width: '65px',
-  height: '100%',
-  fontSize: '$5'
+  fontSize: '$5',
 })
 
 const StyledLink = styled(Link, {

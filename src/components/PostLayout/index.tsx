@@ -11,7 +11,6 @@ type LayoutProps = {
 const StyledButton = styled('div', {
   display: 'flex',
   justifyContent: 'center',
-  paddingTop: '$2'
 })
 
 const ContentContainer = styled('div', {

@@ -4,19 +4,13 @@ import * as Separator from '@radix-ui/react-separator';
 import { postsType } from '@/types';
 import { styled } from '../../../stitches.config'
 import { PostsList } from './postsList';
+import { About } from './about'
 
 type ContentTabsProps = {
   posts: postsType
 }
 
 // TODO REMOVE THIS PX FROM THIS FILE
-
-const Text = styled('p', {
-  margin: 0,
-  paddingTop: '$5',
-  fontFamily: '$system',
-  color: '$secondary',
-})
 
 const Root = styled(Tabs.Root, {
   display: 'flex',
@@ -45,7 +39,7 @@ const Trigger = styled(Tabs.Trigger, {
   paddingY: '$1',
 
   '&:hover': {
-    borderBottom: '1px solid $hover',
+    borderBottom: '1px solid $hover'
   },
   '&[data-state=active]': {
     borderBottom: '1px solid $active',
@@ -60,7 +54,7 @@ const Content = styled(Tabs.Content, {
 
 const VerticalSeparator = styled(Separator.Root, {
   width: '1px',
-  backgroundColor: '$hover'
+  backgroundColor: '$borders'
 })
 
 
@@ -79,7 +73,7 @@ export const ContentTabs = ({ posts }: ContentTabsProps) => (
     <PostsList posts={posts} />
   </Content>
   <Content value='about' >
-    <Text>Here is the about</Text>
+    <About />
   </Content>
 </Root>
 )
