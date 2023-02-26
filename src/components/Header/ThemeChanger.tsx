@@ -1,5 +1,6 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import * as Switch from '@radix-ui/react-switch';
+import { useTheme } from "next-themes";
 
 import { styled } from '../../../stitches.config'
 
@@ -33,9 +34,33 @@ const SwitchThumb = styled(Switch.Thumb, {
   },
 })
 
-export const ThemeChanger = () => (
-  <Container>
-    <SwitchRoot >
+export const ThemeChanger = () => {
+  const [mounted, setMounted] = useState(false)
+  const { theme, setTheme } = useTheme();
+
+  useEffect(() => {
+    setMounted(true)
+  }, [])
+
+  if (!mounted) {
+    return (
+    <Container>
+      <SwitchRoot >
       <SwitchThumb />
     </SwitchRoot>
-  </Container>)
+    </Container>)
+  }
+
+
+  const onThemeChange = (selected : boolean) => {
+    setTheme(selected ? "dark" : 'light')
+  }
+
+  return (
+  <Container>
+    <SwitchRoot onCheckedChange={onThemeChange} checked={theme == 'dark'} >
+      <SwitchThumb />
+    </SwitchRoot>
+  </Container>
+  )
+}
