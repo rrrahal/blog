@@ -1,11 +1,13 @@
 import React, { ReactNode } from 'react'
+import Head from 'next/head'
 
 import { styled } from '../../../stitches.config'
 import { Header } from '../Header'
 import { BackButton } from '../BackButton'
 
 type LayoutProps = {
-  children: ReactNode
+  children: ReactNode,
+  metaTitle: string
 }
 
 const StyledButton = styled('div', {
@@ -21,9 +23,13 @@ const ContentContainer = styled('div', {
   maxWidth: '$bigPostSize',
 })
 
-export default function PostLayout({ children } : LayoutProps) {
+export default function PostLayout({ children, metaTitle } : LayoutProps) {
+  console.log(children)
   return (
     <>
+      <Head>
+        <title>{metaTitle ? `${metaTitle} | Rafael Rahal ` : 'Rafael Rahal'}</title>
+      </Head>
       <Header />
       <StyledButton>
         <BackButton />
