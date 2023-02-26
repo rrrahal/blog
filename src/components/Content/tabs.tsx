@@ -48,8 +48,12 @@ const Trigger = styled(Tabs.Trigger, {
 
 const Content = styled(Tabs.Content, {
   // TODO: REMOVE THIS SIZES
-  width: '650px',
+  width: '90vw',
   color: '$hiContrast',
+
+  "@bp1": {
+    width: '650px'
+  }
 })
 
 const VerticalSeparator = styled(Separator.Root, {

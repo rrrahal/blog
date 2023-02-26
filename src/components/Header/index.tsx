@@ -21,7 +21,11 @@ const Box = styled('div', {
 const Container = styled('div', {
   display: 'flex',
   justifyContent: 'center',
-  width: '600px'
+  width: '400px',
+
+  "@bp1": {
+    width: '600px'
+  }
 })
 
 const StyledSeparator = styled(Separator.Root, {
