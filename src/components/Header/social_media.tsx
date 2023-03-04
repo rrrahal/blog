@@ -5,8 +5,8 @@ import { styled } from '../../../stitches.config'
 
 const Box = styled('div', {
   display: 'flex',
-  alignItems: 'flex-end',
-  height: '100%'
+  alignItems: 'center',
+  marginRight: '$2'
 })
 
 const SocialMediaItem = styled('a', {
