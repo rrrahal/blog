@@ -88,17 +88,10 @@ export const {
 
 
 export const darkTheme = createTheme({
-  colors: {
+  theme: {
     primary: blueDark.blue3,
-    secondary: gray.gray1,
-    hiContrast: amber.amber12,
-    loContrast: amber.amber11,
-    borders: amber.amber6,
-    hover: amber.amber4,
-    active: amber.amber5,
-    twitterBlue: '#1DA1F2',
-    linkedinBlue: '#0077B5'
-  },
+    secondary: gray.gray1
+  }
 })
 
 const GlobalStyles = globalCss({
