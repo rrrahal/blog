@@ -7,6 +7,26 @@ import SEO from "../components/seo"
 
 import { groupBy, getDateYear } from "../utils"
 
+import { datadogRum } from '@datadog/browser-rum';
+
+datadogRum.init({
+    applicationId: process?.env?.GATSBY_DD_APP_ID,
+    clientToken: process?.env?.GATSBY_DD_CLIENT_TOKEN,
+    // `site` refers to the Datadog site parameter of your organization
+    // see https://docs.datadoghq.com/getting_started/site/
+    site: 'datadoghq.eu',
+    service: 'personal-website-and-blog',
+    env: 'prod',
+    // Specify a version number to identify the deployed version of your application in Datadog
+    // version: '1.0.0',
+    sessionSampleRate: 100,
+    sessionReplaySampleRate: 100,
+    trackUserInteractions: true,
+    trackResources: true,
+    trackLongTasks: true,
+    defaultPrivacyLevel: 'allow',
+});
+
 const IndexPage = ({ data }) => {
   // all posts without dates are assumed to be drafts or pages
   // not to be added to postsList
